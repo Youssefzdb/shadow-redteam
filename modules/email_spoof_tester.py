@@ -167,10 +167,6 @@ Tool:   Shadow Red Team v3.0
     print(f"     Message : {custom_message[:60]}...")
     print()
 
-    confirm = input(f"  {C.BOLD}Send? (y/n) >{C.RESET} ").strip().lower()
-    if confirm != 'y':
-        print(f"  {C.YELLOW}Aborted.{C.RESET}")
-        sys.exit(0)
 
     return from_addr, to_addr, domain, subject, body
 
